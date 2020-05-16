@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/dashboard' => 'welcome#dashboard', as: :user_root
   resources :events
+  resources :organizers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
