@@ -1,0 +1,29 @@
+
+    
+    <% @events.each do |event| %>
+    <div class="col-md-4 col-sm-12 col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><%=event.name %></div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Location :<%=event.location %></li>
+                    <li class="list-group-item">Start date:<%=event.start_date %></li>  
+                    <li class="list-group-item">End date: <%=event.end_date %></li> 
+                    <li class="list-group-item">Itended audience: <%=event.intended_audience %></li> 
+                    <li class="list-group-item">Number of Seats: <span class="badge"><%=event.number_seats %></span></li>    
+                </ul> 
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-info">
+                    Details
+                </button>
+
+                  <button class="btn btn-danger">
+                    Delete
+                </button>
+            </div>
+        </div>
+        </div>
+    <% end %>
+   
+
